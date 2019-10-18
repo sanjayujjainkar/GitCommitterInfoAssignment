@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    android:layout_marginTop="@dimen/row_space"
+    android:layout_marginBottom="@dimen/row_space"
+    android:background="@color/cardview_light_background"
+    tools:context="com.pof.gitcommitterinfo.ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/row_height"
+        android:layout_height="@dimen/row_height"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorner_drawable" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="16sp"/>
+
+        <!--<TextSwitcher
+            android:id="@+id/date_loginname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp">
+        </TextSwitcher>-->
+
+        <com.pof.gitcommitterinfo.ui.CustomTextSwitcher
+            android:id="@+id/date_loginname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp">
+        </com.pof.gitcommitterinfo.ui.CustomTextSwitcher>
+
+        <!--<TextView
+            android:id="@+id/date_loginname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

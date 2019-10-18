@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="row_height">100dp</dimen>
+    <dimen name="row_space">5dp</dimen>
+    <dimen name="detailview_height">250dp</dimen>
+    <dimen name="thumbnail_dimention">80dp</dimen>
+</resources>

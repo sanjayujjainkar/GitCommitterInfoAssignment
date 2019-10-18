@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detail_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/detailview_height"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:background="@color/cardview_light_background">
+
+    <ImageView
+        android:id="@+id/detail_imageView"
+        android:layout_width="@dimen/row_height"
+        android:layout_height="@dimen/row_height"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="@color/cardview_dark_background" />
+
+    <ImageView
+        android:id="@+id/detail_cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cancel"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height"
+        android:layout_toLeftOf="@+id/detail_cancelbtn"
+        android:layout_toRightOf="@id/detail_imageView"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/detail_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/detail_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/detail_sha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/detail_created_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Created at:"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detail_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/detail_imageView"
+        android:layout_margin="5dp"
+        android:maxLines="4"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>
